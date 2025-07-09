@@ -1,3 +1,8 @@
+## Credits
+
+This project is a step-by-step reproduction of the tutorial created by [@mouredev](https://github.com/mouredev) available [here](https://github.com/mouredev/hello-javascript).  
+All rights to the original content belong to its author.
+
 # Hello JavaScript
 
 [![Python](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)](https://developer.mozilla.org/es/docs/Web/JavaScript)
