@@ -59,7 +59,6 @@ class PrivatePerson {
         this.alias = alias
         this.#bank = bank
     }
-
     pay() {
         this.#bank
     }
@@ -83,11 +82,9 @@ class GetSetPerson {
         this.#alias = alias
         this.#bank = bank
     }
-
     get name() {
         return this.#name
     }
-
     set bank(bank) {
         this.#bank = bank
     }
@@ -101,3 +98,54 @@ console.log(person6.name)
 
 person6.bank = "new IBAN123456789"
 
+// inheritance
+console.log("Inheritance")
+
+class Animal {
+    constructor(name) {
+        this.name = name
+    }
+    sound() {
+        console.log("The animal emits a generic sound")
+    }
+}
+
+class Dog extends Animal {
+    sound() {
+        console.log("Guau!")
+    }
+    run() {
+        console.log("The dog runs")
+    }
+}
+
+class Fish extends Animal {
+    constructor(name, size) {
+        super(name)
+        this.size = size
+    }
+    swim() {
+        console.log("The fish swim")
+    }
+
+}
+
+let myDog = new Dog("Cholito")
+myDog.run()
+myDog.sound()
+
+let myFish = new Fish("Nemo", 10)
+myFish.swim()
+myFish.sound()
+
+// Static methods: 
+// A static method is a function that is defined within a class,
+// but does not need an instance of the object to be used.
+
+class MathOperations {
+    static sum(a, b) {
+        return a + b
+    }
+}
+
+console.log(MathOperations.sum(5, 10))
